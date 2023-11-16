@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart School</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- our project just needs Font Awesome Solid + Brands -->
+    <link href="/your-path-to-fontawesome/css/fontawesome.css" rel="stylesheet">
+    <link href="/your-path-to-fontawesome/css/brands.css" rel="stylesheet">
+    <link href="/your-path-to-fontawesome/css/solid.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="/css/style.css">
+
+</head>
+
+<body>
+    <div class="sideform">
+        <a href="/components/requestCallBack.html" class="side-button btn btn-warning"><b>Request A Call Back</b></a>
+    </div>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid" style="justify-content: space-between;">
+                <a href="/">
+                    <img width="245px" height="71px" src="img/logo.png" alt="Smart School">
+                </a>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Products
+                            </a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="/components/products/whiteLabelK12App.html">White-Label K-12 Ed-tech App solution</a></li>
+                              <li><a class="dropdown-item" href="/components/products/WhiteLabelSmartClass.html">White-Label Smart Class</a></li>
+                            </ul>
+                          </li>
+                  
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/components/blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/components/aboutUs.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active "
+                                style="background-color: goldenrod !important;border-radius: 5px; margin: 0px 20px; padding:8px"
+                                aria-current="page" href="/components/contactUs.html"
+                                data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasTop"
+                                aria-controls="offcanvasTop" >Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-7">
+                    <div class="banner-cont">
+                        <h1>
+                            Why to reinvent the wheel, boost your brand with our white-label Ed-Tech solutions
+                            <span>Smarter way to do Ed-Tech business.</span>
+                        </h1>
+                    </div>
+                </div>
+                <div class="col-sm-5">
+                    <div id="WonderPluginCarousel" class="image_tn">
+                        <a href="/video/723014202720p30.mp4">
+                        <img width="100%" height="auto" src="/img/banner-thumb-003.webp" alt="" class="video-image">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- CATEGORY SECTION -->
+        <div class="categories">
+            <div class="container">
+                <h2 class="heading">
+                    Categories of <span>customers</span> we can help
+                </h2>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <ul id="pills-tab" class=" nav nav-pill mb-3">
+                            <li class="nav-item">
+                                <button id="school-tab" class="nav-link active" onclick="schoolTab()" ><a href="#school">School</a></button>
+                                <img id="school-img" style="display: none;" class="active" src="/img/icon9.png" alt="">
+                            </li>
+                            <li class="nav-item">
+                                <button id="coaching-tab" class="nav-link" onclick="coachingTab()"><a href="#coaching">Coaching</a></button>
+                                <img id="coaching-img" style="display: none;" class="" src="/img/icon4.png" alt="">
+                            </li>
+                            <li class="nav-item ">
+                                <button id="hardwareManufacturer-tab" class="nav-link" onclick="hardwareManufacturerTab()"><a href="#hardware-manufacturer">Hardware Manufacturer</a></button>
+                                <img id="hardwareManufacturer-img" class="" style="display: none;" src="/img/icon5.png" alt="">
+                            </li>
+                            <li class="nav-item">
+                                <button id="edtechCompanies-tab" class="nav-link" onclick="edtechCompaniesTab()"><a href="#Ed-tech-companies">Ed-tech Companies</a></button>
+                                <img id="edtechCompanies-img" style="display: none;" class="" src="/img/icon7.png" alt="">
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-9">
+                        <div id="pills-tabContent" class="tab-content">
+                            <div id="school-content" class="tab-pane fade show">
+                                <div class="col-sm-5">
+                                    <a href="/video/723349948720p30.mp4">
+                                        <img src="/img/school-thumb-001.webp" height="180px" width="320px" alt="">
+                                    </a>
+                                    <div class="brouchure" style="text-align: left; padding: 20px 0 20px 0;">
+                                        <a href="/brouchure/Schools-001.pdf" class="download-brouchure">Download Brouchure</a>
+                                    </div>
+                                </div>
+                                <div class="subheading">
+                                    Schools can offer our rich e-learning resources through an App and teaching platform under their own brand as a white-labeled solution.
+                                </div>
+                                <div class="tabcnt tab-primary0">
+                                    <h3>Brand Positioning</h3>
+                                    <ul>
+                                        <li>New App under School’s brand will be created and will be uploaded by School’s name on play-store. Everywhere the brand of School will be highlighted.</li>
+                                        <li>Sophisticated ‘Content Usage’ and ‘Weak Area Identification’ tools through our teaching platform allow teachers and administrators to view and analyze student performance. Parents will be spellbound by the level of monitoring and individualized attention through this feature.</li>
+                                    </ul>
+                                </div>
+                                <div class="tabcnt tab-primary1">
+                                    <h3>Competitive Advantage</h3>
+                                    <ul>
+                                        <li>Offering a branded App and teaching platform will help establish the school as a forward-looking and dynamic institution and will also serve as a differentiating factor. Worth a mention in the admission prospectus!</li>
+                                        <li>The App and high-quality resources in it will improve the students' preparedness and ultimately grades. Better results guarantee less attrition among students.</li>
+                                        <li>The only App in the market that will map your physical books to the e-learning resources on the App, so that the consumption by teachers and students is more effective.</li>
+                                    </ul>
+                                </div>
+                                <div class="tabcnt tab-primary1">
+                                    <h3>Management Ease</h3>
+                                    <ul>
+                                        <li>The teaching platform includes options for conducting live classes, tracking attendance, sharing assignments, sending notifications etc. It also provides a very powerful fee tracking and monitoring dashboards, as well as an online payment gateway for better fee collection.</li>
+                                    </ul>
+                                </div>
+                                <div class="tabcnt tab-primary2">
+                                    <h3>Income Opportunity</h3>
+                                    <ul>
+                                        <li>It is a great source of revenue as the school can provide the App to parents at a margin higher than what it is sourced from us.</li>
+                                    </ul>
+                                </div>
+                                <div class="tabcnt tab-primary3">
+                                    <h3>Cost Saving</h3>
+                                    <ul>
+                                        <li>Schools no longer have to pay extra for smart class content or the teaching platform as this is provided without any additional cost in our solution.</li>
+                                    </ul>
+                                </div>
+                                
+                            </div>
+
+                            <div id="coaching-content" class="tab-pane fade show">
+                                <div class="col-sm-5">
+                                    <a href="/video/723005575720p30.mp4">
+                                        <img src="/img/coaching-thumb-001.webp" height="180px" width="320px" alt="">
+                                    </a>
+                                    <div class="brouchure" style="text-align: left; padding: 20px 0 20px 0;">
+                                        <a href="/brouchure/Coaching-001.pdf" class="download-brouchure">Download Brouchure</a>
+                                    </div>
+                                </div>
+                                <div class="subheading">
+                                    Coaching Institutes can offer our rich e-learning resources through an App and teaching platform under their own brand as a white-labeled solution.
+                                </div>
+                                <div class="tabcnt tab-primary0">
+                                    <h3>Brand Positioning</h3>
+                                    <ul>
+                                        <li>New App under School’s brand will be created and will be uploaded by School’s name on play-store. Everywhere the brand of School will be highlighted.</li>
+                                        <li>Sophisticated ‘Content Usage’ and ‘Weak Area Identification’ tools through our teaching platform allow teachers and administrators to view and analyze student performance. Parents will be spellbound by the level of monitoring and individualized attention through this feature.</li>
+                                    </ul>
+                                </div>
+                                <div class="tabcnt tab-primary0">
+                                    <h3>Competitive Advantage</h3>
+                                    <ul>
+                                        <li>Gone are those days where you can grow or even hold your student base without having any digital content offering alongside. Lot of ed-Tech brands are in the process of establishing their physical coaching centers. This white-labeled solution will not only safeguard you against that threat but will ensure that your brand continues to grow in coming times.</li>
+                                        <li>Offering a branded App and teaching platform will help establish the Coaching Institute as a forward-looking and dynamic institution and will also serve as a differentiating factor. Worth a mention in the admission prospectus!</li>
+                                        <li>The App and high-quality resources in it will improve the students' preparedness and ultimately grades. Better results guarantee less attrition among students.</li>
+                                    </ul>
+                                </div>
+                                <div class="tabcnt tab-primary1">
+                                    <h3>Management Ease</h3>
+                                    <ul>
+                                        <li>The teaching platform includes options for conducting live classes, tracking attendance, sharing assignments, sending notifications etc. It also provides a very powerful fee tracking and monitoring dashboards, as well as an online payment gateway for better fee collection. You can now seamlessly run your institute in case of any future covid lockdown events.</li>
+                                    </ul>
+                                </div>
+                                <div class="tabcnt tab-primary3">
+                                    <h3>Income Opportunity</h3>
+                                    <ul>
+                                        <li>It is a great source of revenue as you can easily bundle this content with your course structure and can command a premium.</li>
+                                        <li>Majority coaching institutes cater to 8th and above standard students. From now onwards you will be able to cater a larger student base of the entire KG to 12th standard students.</li>
+                                        <li>You can also record and publish your lectures and can sell the same through your white-labeled App. We can even enable it on our platform with a huge student base and can provide you with additional revenue opportunities.</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div id="hardwareManufacturer-content" class="tab-pane fade show">
+                                <div class="col-sm-5">
+                                    <a href="/video/723005887720p30.mp4">
+                                        <img src="/img/hardware-thumb-001.webp" height="180px" width="320px" alt="">
+                                    </a>
+                                    <div class="brouchure" style="text-align: left; padding: 20px 0 20px 0;">
+                                        <a href="/brouchure/Hardware-Manufacturers-001.pdf" class="download-brouchure">Download Brouchure</a>
+                                    </div>
+                                </div>
+                                <div class="subheading">
+                                    Smart Interactive Panels and Interactive whiteboard manufacturers can do an OEM agreement with us. Wherein we will create a customized Smart Class Solution white-labeled in your brand which will be optimized for your set of devices.
+                                </div>
+                                <div class="tabcnt tab-primary0">
+                                    <h3>Brand Positioning</h3>
+                                    <ul>
+                                        <li>Schools generally purchase interactive panels and whiteboards to teach using high quality animated digital content. Instead of tying up with third party Smart Class content providers - going forward you can position your brand not just as a hardware provider but also as a “Smart Class” provider</li>
+                                        <li>Sophisticated ‘Content Usage’ and ‘Weak Area Identification’ tools through our teaching platform allow teachers and administrators to view and analyze student performance. Parents will be spellbound by the level of monitoring and individualized attention through this feature.</li>
+                                    </ul>
+                                </div>
+                                <div class="tabcnt tab-primary1">
+                                    <h3>Competitive Advantage</h3>
+                                    <ul>
+                                        <li>Special rock bottom OEM price for Smart Class content will beat any competitors.</li>
+                                        <li>You and your dealers will have better margins to operate against your competitors.</li>
+                                        <li>Improved brand recognition and perception as compared to your competitors.</li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="tabcnt tab-primary3">
+                                    <h3>Income Opportunity</h3>
+                                    <ul>
+                                        <li>Year on year additional revenue opportunities by renewal of Smart Class content.</li>
+                                        <li>Lifetime value of your clients will increase considerably through this tie up.</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div id="edtechCompanies-content" class="tab-pane fade active show">
+                                <div class="col-sm-5">
+                                    <a href="/video/723349948720p30.mp4">
+                                        <img src="/img/ed-tech-thumb-001.webp" height="180px" width="320px" alt="">
+                                    </a>
+                                    <div class="brouchure" style="text-align: left; padding: 20px 0 20px 0;">
+                                        <a href="/brouchure/Ed-Tech-001.pdf" class="download-brouchure">Download Brouchure</a>
+                                    </div>
+                                </div>
+                                <div class="subheading">
+                                    Ed-Tech companies can offer our rich e-learning resources through an App under their own brand as a white-labeled solution.
+                                </div>
+                                <div class="tabcnt tab-primary0">
+                                    <h3>Brand Positioning</h3>
+                                    <ul>
+                                        <li>Getting into the K-12 space requires huge upfront investment and a long waiting time to market. Why reinvent the wheel when you can get happy customers by using a tried and tested product; 50,000 modules and 2 million links all whitelabeled in your brand.</li>
+                                        <li>Enhance your positioning in the market by becoming a full stack digital content and learning solution provider.</li>
+                                    </ul>
+                                </div>
+                                <div class="tabcnt tab-primary1">
+                                    <h3>Competitive Advantage</h3>
+                                    <ul>
+                                        <li>Pitching additional K-12 content in your category will create competitive advantage for your brand.
+                                        </li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="tabcnt tab-primary3">
+                                    <h3>Income Opportunity</h3>
+                                    <ul>
+                                        <li>It is a great source of revenue as you can easily bundle this content with your course structure and can command a premium. Opportunity to earn more from your captive audience.</li>
+                                        <li>Lifetime value of your clients will increase considerably through this tie up.</li>
+                                        <li>You can also publish your courses on our platform which can provide you with additional revenue opportunities.</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="productson">
+                <div class="container">
+                    <h2 class="heading">
+                        <span>Products</span>
+                        you can
+                        <span>own</span>
+                    </h2>
+                    <p class="subheading">
+                        Here are some of our ed-tech products which can be white-labeled and customized as per your
+                        business needs and delivered to you with your own branding.
+                    </p>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="producton-item">
+                                <figure>
+                                    <img class="ss_img" src="/img/productswon1.webp" alt="productswon1">
+                                </figure>
+                                <h3 class="text-center">White label K-12 Ed-tech App</h3>
+                                <p>A white-labeled K-12 e-Learning app with your institution’s brand with more than
+                                    50,000+ animated modules, 10,000+ interactive games and 2 million learning
+                                    resources. Get your brand into App Stores and students’ pockets in less than 30
+                                    days.</p>
+                                <a class="learnBtn" href="#">Learn More</a>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="producton-item">
+                                <figure>
+                                    <img class="ss_img" src="/img/productswon2.webp" alt="productswon2">
+                                </figure>
+                                <h3 class="text-center">White Label Smart Class</h3>
+                                <p>Customized Smart-Class solution containing more than 50,000+ modules, 10,000+
+                                    interactive games and 2 million learning resources white-labeled and optimized for
+                                    your set of devices. Containing CBSE, ICSE and all state boards along with 3000+
+                                    publishers. </p>
+                                <a class="learnBtn" href="#">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="whyschool">
+                <div class="container">
+                    <h2 class="heading"><span>Why </span>SmartSchool?</h2>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="whyschool-box">
+                                <p>SmartSchool is into the creation of “Digital content and Delivery technology” which
+                                    can increase interest and improve learning outcomes of students. We provide all this
+                                    content and softwares white-labeled for educational institutions with captive
+                                    audiences. </p>
+                                <strong>1</strong>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="whyschool-box">
+                                <p>The solution contains 50,000+ animated modules, 2 million+ learning resources,
+                                    10,000+ interactive games which are mapped for CBSE, ICSE and all major Indian state
+                                    boards. We have gone ahead and mapped 3000+ publishers to provide maximum
+                                    personalization to students. We also provide a powerful teaching platform which can
+                                    help educators to track performance of their students along with conducting live
+                                    classes, sharing assignments, tracking attendance and sending notifications etc.
+                                </p>
+                                <strong>2</strong>
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <div class="whyschool-box">
+                                <p>Founded by alumni of DCE, SmartSchool Education Pvt Ltd is a more than 10 years old
+                                    educational company based in Delhi. We have been actively providing innovative
+                                    educational solutions to various educational institutions in India, Nepal, Pakistan,
+                                    Netherlands, Nigeria, Zimbabwe, Dubai, Kuwait, Oman. </p>
+                                <strong>3</strong>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="countdown">
+            <div class="countdown-bg">
+                <div class="container">
+                    <h2 class="heading">
+                        Our
+                        <span>numbers</span>
+                        speak
+                    </h2>
+                    <p>We are committed and successfully served these many individuals.</p>
+                </div>
+            </div>
+            <div class="container">
+                <div class="countdown-box">
+                    <ul>
+                        <li>
+                            <img src="/img/icon9.png" alt="Happy Schools">
+                            <h3>6000+</h3>
+                            <h4>Happy Schools</h4>
+                        </li>
+                        <li>
+                            <img src="/img/icon11.png" alt="Delighted Students">
+                            <h3>10,00,000+</h3>
+                            <h4>Delighted Students</h4>
+                        </li>
+                        <li>
+                            <img src="/img/icon1.png" alt="Successful Distributors">
+                            <h3>500+ </h3>
+                            <h4>Successful Distributors</h4>
+                        </li>
+                        <li>
+                            <img src="/img/icon2.png" alt="Man Hours of Development">
+                            <h3>21,60,000</h3>
+                            <h4>Man Hours of Development</h4>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- OUR CLIENT SECTION -->
+        <div class="ourclient">
+            <div class="container">
+                <h2 class="heading">
+                    Our
+                    <span>Client</span>
+                </h2>
+                <p class="subheading">
+				We have provided our services to some of the most renowned companies.
+                </p>
+                <div class="clientslider">
+
+                </div>
+            </div>
+        </div>
+        <div class="whatusers"></div>
+        <br>
+        <br>
+        <div class="container">
+            <footer>
+                <div class="row">
+                    <div class="col-sm-5">
+                        <div class="footer-desc">
+                            <figure>
+                                <a href="/">
+                                    <img src="/img/foot-logo.png" alt="foot-logo">
+                                </a>
+                            </figure>
+                            <ul class="socialicon">
+                                <!-- <li>
+                                    <a href="https://www.instagram.com/smartschooleducationofficial/" target="_blank">
+                                        <span class="sctreen-reader-text">SmartSchool Education Pvt Ltd</span>
+                                        <i class="fa fa-instagram"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.instagram.com/smartschooleducationofficial/" target="_blank">
+                                        <span class="sctreen-reader-text">SmartSchool Education Pvt Ltd</span>
+                                        <i class="fa fa-instagram"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.instagram.com/smartschooleducationofficial/" target="_blank">
+                                        <span class="sctreen-reader-text">SmartSchool Education Pvt Ltd</span>
+                                        <i class="fa fa-instagram"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.instagram.com/smartschooleducationofficial/" target="_blank">
+                                        <span class="sctreen-reader-text">SmartSchool Education Pvt Ltd</span>
+                                        <i class="fa fa-instagram"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.instagram.com/smartschooleducationofficial/" target="_blank">
+                                        <span class="sctreen-reader-text">SmartSchool Education Pvt Ltd</span>
+                                        <i class="fa fa-instagram"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.instagram.com/smartschooleducationofficial/" target="_blank">
+                                        <span class="sctreen-reader-text">SmartSchool Education Pvt Ltd</span>
+                                        <i class="fa fa-instagram"></i>
+                                    </a>
+                                </li> -->
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 mt-3">
+                        <ul class="footer-links">
+                            <li><a href="/">About us</a></li>
+                            <li><a href="/">Blog</a></li>
+                            <li><a href="/">Terms of use</a></li>
+                            <li><a href="/">Privacy Statement</a></li>
+                            <li><a href="/">Disclaimer</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4 mt-3">
+                        <h5>Contact Us</h5>
+                        <div class="footer-cnt">
+                            <p>
+                                <img width="36px" height="38px" src="/img/asset/phone.png" alt="">
+                                <span>+91-89270 89270</span>
+                                <br>
+                                <span>+91-84439 84439 </span>
+                            </p>
+                        </div>
+                        <div class="footer-cnt">
+                            <p>
+                                <img width="36px" height="38px" src="/img/asset/envelope.png" alt="">
+                                <span>For Business Enquiry
+                                <br>
+                                <a href="mailto:business@smartschoolonline.in">business@smartschoolonline.in</a>
+                                </span>
+                            </p>
+                        </div>
+                        <div class="footer-cnt">
+                            <p>
+                                <img width="36px" height="38px" src="/img/asset/envelope.png" alt="">
+                                <span>For Support Enquiry
+                                <br>
+                                    <a href="mailto:help@smartschoolonline.in">help@smartschoolonline.in</a>
+                                </span>
+                            </p>
+                        </div>
+                        <div class="footer-cnt">
+                            <p>
+                                <img width="36px" height="38px" src="/img/asset/map-marker.png" alt="">
+                                <span>Aykon Tower - Second Floor, Noida-</span>
+                                <br>
+                                <span>Greater Noida Expy, Sector 135, Noida,</span>
+                                <br>
+                                <span>Uttar Pradesh 201304</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="copyright">
+                        <p>&copy; 2023 SmartSchool. All rights reserved</p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="/script.js"></script>
+
+</body>
+
+</html>

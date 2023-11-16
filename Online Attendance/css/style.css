@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.heading{
+    background-color: antiquewhite;
+    text-align: center;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.container{
+    margin: 2rem;
+    padding: 2rem;
+    border: 1px solid  black;
+    border-radius: 4px;
+    background-color:beige;
+}
+
+.container .section-1 form{
+    margin: 2px;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 4px;
+    background-color: rgb(190, 214, 235);
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .section-1 .field{
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.container .section-1 .field h5{
+    margin: 5px;
+    top: 0.5 rem;
+    font-size: 1rem;
+}
+
+.container .section-1 .field select , .container .section-1 .field #date{
+    font-size: 1rem;
+    margin:0.5;
+    padding: 2px;
+    background-color: white;
+    border: none;
+    border-radius: 2px;
+    border: 1px solid black;
+}
+
+.container .section-1 .btn{
+    display: inline-block;
+    padding: 5px;
+    margin: 20px;
+}   
+
+.btn-active{
+    display: flex;
+    font-size: 1rem;
+    padding: 5px;
+    margin: 5px;
+    width: 100px;  
+    background-color: rgb(56, 141, 238);
+    border: none;
+    color: white;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+.btn-active:hover{
+    background-color: rgb(158, 197, 241);    
+}
+
+.container .section-2{
+    border: 1px solid black;
+    border-radius: 4px;
+    height: 400px;
+}
+
+table{
+    width: 100%;
+    margin: 5px;
+    padding: 5px;       
+}
+th{
+    border: 1px solid black;
+    background-color: rgb(245, 188, 148);
+    height: 20px;
+}
+td{
+    padding: 0 5px;
+    border: 1px solid black;
+    background-color: rgb(248, 234, 224);
+}
